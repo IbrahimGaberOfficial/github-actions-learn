@@ -2,6 +2,8 @@ name: Scheduled Every Minute Job
 on:
   schedule:
     - cron: '*/1 * * * *'  # Runs every minute
+  workflow_dispatch:
+
 
 jobs:
   test_schedule:
