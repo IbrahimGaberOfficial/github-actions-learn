@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Every Minutes
-        runs: echo "current time is $(date)"
+        run: echo "current time is $(date)"
