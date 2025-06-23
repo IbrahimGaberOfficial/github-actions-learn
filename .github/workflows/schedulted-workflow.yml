@@ -1,0 +1,11 @@
+name: Scheduled Every Minute Job
+on:
+  schedule:
+    - cron: '*/1 * * * *'  # Runs every minute
+
+jobs:
+  test_schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Current Time
+        run: echo "Current time is $(date)"  # ✅ Correct: `run` (not `runs`)
