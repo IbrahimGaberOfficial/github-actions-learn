@@ -11,8 +11,15 @@ on:
 
 jobs:
   system-info:
-    runs-on : ubuntu_lastest
+    runs-on : ubuntu-latest
+
+    
     steps:
+
+     # Install neofetch (required)
+      - name: Install neofetch
+        run: sudo apt-get update && sudo apt-get install -y neofetch
+        
       - name : running neofetch
         run: 
           neofetch
