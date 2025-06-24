@@ -11,7 +11,7 @@ on:
 
 jobs:
   system-info:
-    runs-on : ubuntu_lastest
+    runs-on : ubuntu-latest
     steps:
       - name : running neofetch
         run: 
