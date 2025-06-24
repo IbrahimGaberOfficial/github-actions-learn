@@ -1,0 +1,21 @@
+name : Multi Triggers
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  system-info:
+    runs_on : ubuntu_lastest
+    steps:
+      - name : running neofetch
+        run: 
+          neofetch
+      - name : running uname
+        run : 
+          uname -a 
